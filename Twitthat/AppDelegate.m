@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "Browser.h"
+
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
@@ -30,5 +32,17 @@
 }
 
 #pragma mark - Actions
+
+- (IBAction)chromeAction:(id)sender {
+    NSLog(@"%@", [[Browser get] chrome]);
+}
+
+- (IBAction)firefoxAction:(id)sender {
+    NSLog(@"%@", [[Browser get] firefox]);
+}
+
+- (IBAction)safariAction:(id)sender {
+    NSLog(@"%@", [[Browser get] safari]);
+}
 
 @end

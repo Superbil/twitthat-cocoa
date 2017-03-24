@@ -24,12 +24,21 @@
             <items>
                 <menuItem title="{{SM_Get_Chrome}}" id="OLB-g3-66d">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="chromeAction:" target="Voe-Tx-rLC" id="KmB-oR-HZa"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="{{SM_Get_Firefox}}" id="C7w-7S-iAb">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="firefoxAction:" target="Voe-Tx-rLC" id="7x3-3L-e76"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="{{SM_Get_Safari}}" id="Iey-b8-UiA">
                     <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="safariAction:" target="Voe-Tx-rLC" id="HOm-yV-xkg"/>
+                    </connections>
                 </menuItem>
                 <menuItem title="{{SM_Quit}}" id="hQH-yi-pmA">
                     <modifierMask key="keyEquivalentModifierMask"/>
