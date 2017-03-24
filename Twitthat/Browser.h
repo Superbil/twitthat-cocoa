@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class Link;
+
 @interface Browser : NSObject
+
++ (instancetype)get;
+
+- (Link *)chrome;
+
+- (Link *)firefox;
+
+- (Link *)safari;
 
 @end
