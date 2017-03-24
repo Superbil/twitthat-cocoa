@@ -11,12 +11,17 @@
 @interface AppDelegate ()
 
 @property (weak) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSMenu *statusMenu;
+@property (strong) NSStatusItem *statusBar;
+
 @end
 
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    self.statusBar.title = @"TT";
+    self.statusBar.menu = self.statusMenu;
 }
 
 
