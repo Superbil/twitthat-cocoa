@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E7A1B99D1E85614000D7D4D1 /* Browser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1B99C1E85614000D7D4D1 /* Browser.m */; };
+		E7A1B9A01E859BD800D7D4D1 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A1B99F1E859BD800D7D4D1 /* AppleScriptObjC.framework */; };
 		E7A309D21E855D030079572C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A309D11E855D030079572C /* AppDelegate.m */; };
 		E7A309D51E855D030079572C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A309D41E855D030079572C /* main.m */; };
 		E7A309D71E855D030079572C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A309D61E855D030079572C /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* Begin PBXFileReference section */
 		E7A1B99B1E85614000D7D4D1 /* Browser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Browser.h; path = Twitthat/Browser.h; sourceTree = "<group>"; };
 		E7A1B99C1E85614000D7D4D1 /* Browser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Browser.m; path = Twitthat/Browser.m; sourceTree = "<group>"; };
+		E7A1B99F1E859BD800D7D4D1 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
 		E7A309CD1E855D030079572C /* Twitthat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitthat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A309D01E855D030079572C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7A309D11E855D030079572C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A1B9A01E859BD800D7D4D1 /* AppleScriptObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,12 +49,21 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		E7A1B99E1E859BD800D7D4D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7A1B99F1E859BD800D7D4D1 /* AppleScriptObjC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E7A309C41E855D030079572C = {
 			isa = PBXGroup;
 			children = (
 				E7A1B99A1E85604300D7D4D1 /* Classes */,
 				E7A309CF1E855D030079572C /* Twitthat */,
 				E7A309CE1E855D030079572C /* Products */,
+				E7A1B99E1E859BD800D7D4D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
