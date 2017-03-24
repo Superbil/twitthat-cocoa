@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E7A1B99D1E85614000D7D4D1 /* Browser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1B99C1E85614000D7D4D1 /* Browser.m */; };
 		E7A309D21E855D030079572C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A309D11E855D030079572C /* AppDelegate.m */; };
 		E7A309D51E855D030079572C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A309D41E855D030079572C /* main.m */; };
 		E7A309D71E855D030079572C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A309D61E855D030079572C /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E7A1B99B1E85614000D7D4D1 /* Browser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Browser.h; path = Twitthat/Browser.h; sourceTree = "<group>"; };
+		E7A1B99C1E85614000D7D4D1 /* Browser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Browser.m; path = Twitthat/Browser.m; sourceTree = "<group>"; };
 		E7A309CD1E855D030079572C /* Twitthat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitthat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A309D01E855D030079572C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7A309D11E855D030079572C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,9 +37,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E7A1B99A1E85604300D7D4D1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E7A1B99B1E85614000D7D4D1 /* Browser.h */,
+				E7A1B99C1E85614000D7D4D1 /* Browser.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		E7A309C41E855D030079572C = {
 			isa = PBXGroup;
 			children = (
+				E7A1B99A1E85604300D7D4D1 /* Classes */,
 				E7A309CF1E855D030079572C /* Twitthat */,
 				E7A309CE1E855D030079572C /* Products */,
 			);
@@ -141,6 +154,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A1B99D1E85614000D7D4D1 /* Browser.m in Sources */,
 				E7A309D51E855D030079572C /* main.m in Sources */,
 				E7A309D21E855D030079572C /* AppDelegate.m in Sources */,
 			);
@@ -200,7 +214,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -241,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
