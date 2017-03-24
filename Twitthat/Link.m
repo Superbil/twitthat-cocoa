@@ -23,7 +23,8 @@
             if (r.location != NSNotFound) {
                 NSString *link = [aString substringWithRange:NSMakeRange(0, r.location)];
                 self.url = [NSURL URLWithString:link];
-                self.title = [aString substringWithRange:NSMakeRange(r.location + split.length, aString.length - (r.location + split.length))];
+                NSString *title = [aString substringWithRange:NSMakeRange(r.location + split.length, aString.length - (r.location + split.length))];
+                self.title = [title stringByTrimmingCharactersInSet:[NSCharacterSet newlineCharacterSet]];
             }
         }
     }
