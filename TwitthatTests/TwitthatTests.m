@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 
+#import "Link.h"
+
 @interface TwitthatTests : XCTestCase
 
 @end
@@ -24,16 +26,16 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
-}
+- (void)testLink {
+    Link *l = [[Link alloc] initWithString:@"https://superbil.org::superbil::Hello I am back"];
+    XCTAssertNotNil(l);
+    XCTAssertEqualObjects(l.title, @"Hello I am back");
+    XCTAssertEqualObjects(l.url.host, @"superbil.org");
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+    Link *nl = [[Link alloc] initWithString:@""];
+    XCTAssertNotNil(nl);
+    XCTAssertNil(nl.title);
+    XCTAssertNil(nl.url);
 }
 
 @end
