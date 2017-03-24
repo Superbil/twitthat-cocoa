@@ -10,11 +10,22 @@
 		E7A1B99D1E85614000D7D4D1 /* Browser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1B99C1E85614000D7D4D1 /* Browser.m */; };
 		E7A1B9A01E859BD800D7D4D1 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A1B99F1E859BD800D7D4D1 /* AppleScriptObjC.framework */; };
 		E7A1B9A31E859F5400D7D4D1 /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1B9A21E859F5400D7D4D1 /* Link.m */; };
+		E7A1B9B11E85B5DF00D7D4D1 /* TwitthatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1B9B01E85B5DF00D7D4D1 /* TwitthatTests.m */; };
 		E7A309D21E855D030079572C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A309D11E855D030079572C /* AppDelegate.m */; };
 		E7A309D51E855D030079572C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A309D41E855D030079572C /* main.m */; };
 		E7A309D71E855D030079572C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A309D61E855D030079572C /* Assets.xcassets */; };
 		E7A309DA1E855D040079572C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A309D81E855D040079572C /* MainMenu.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7A1B9B31E85B5DF00D7D4D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7A309C51E855D030079572C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7A309CC1E855D030079572C;
+			remoteInfo = Twitthat;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		E7A1B99B1E85614000D7D4D1 /* Browser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Browser.h; path = Twitthat/Browser.h; sourceTree = "<group>"; };
@@ -22,6 +33,9 @@
 		E7A1B99F1E859BD800D7D4D1 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
 		E7A1B9A11E859F5400D7D4D1 /* Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Link.h; path = Twitthat/Link.h; sourceTree = "<group>"; };
 		E7A1B9A21E859F5400D7D4D1 /* Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Link.m; path = Twitthat/Link.m; sourceTree = "<group>"; };
+		E7A1B9AE1E85B5DF00D7D4D1 /* TwitthatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitthatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7A1B9B01E85B5DF00D7D4D1 /* TwitthatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitthatTests.m; sourceTree = "<group>"; };
+		E7A1B9B21E85B5DF00D7D4D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7A309CD1E855D030079572C /* Twitthat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Twitthat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A309D01E855D030079572C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7A309D11E855D030079572C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,11 +76,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E7A1B9AF1E85B5DF00D7D4D1 /* TwitthatTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7A1B9B01E85B5DF00D7D4D1 /* TwitthatTests.m */,
+				E7A1B9B21E85B5DF00D7D4D1 /* Info.plist */,
+			);
+			path = TwitthatTests;
+			sourceTree = "<group>";
+		};
 		E7A309C41E855D030079572C = {
 			isa = PBXGroup;
 			children = (
 				E7A1B99A1E85604300D7D4D1 /* Classes */,
 				E7A309CF1E855D030079572C /* Twitthat */,
+				E7A1B9AF1E85B5DF00D7D4D1 /* TwitthatTests */,
 				E7A309CE1E855D030079572C /* Products */,
 				E7A1B99E1E859BD800D7D4D1 /* Frameworks */,
 			);
@@ -76,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				E7A309CD1E855D030079572C /* Twitthat.app */,
+				E7A1B9AE1E85B5DF00D7D4D1 /* TwitthatTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,6 +129,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E7A1B9AD1E85B5DF00D7D4D1 /* TwitthatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7A1B9B51E85B5DF00D7D4D1 /* Build configuration list for PBXNativeTarget "TwitthatTests" */;
+			buildPhases = (
+				E7A1B9AA1E85B5DF00D7D4D1 /* Sources */,
+				E7A1B9AB1E85B5DF00D7D4D1 /* Frameworks */,
+				E7A1B9AC1E85B5DF00D7D4D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7A1B9B41E85B5DF00D7D4D1 /* PBXTargetDependency */,
+			);
+			name = TwitthatTests;
+			productName = TwitthatTests;
+			productReference = E7A1B9AE1E85B5DF00D7D4D1 /* TwitthatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		E7A309CC1E855D030079572C /* Twitthat */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7A309DE1E855D040079572C /* Build configuration list for PBXNativeTarget "Twitthat" */;
@@ -130,6 +173,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Superbil;
 				TargetAttributes = {
+					E7A1B9AD1E85B5DF00D7D4D1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E7A309CC1E855D030079572C;
+					};
 					E7A309CC1E855D030079572C = {
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
@@ -150,11 +198,19 @@
 			projectRoot = "";
 			targets = (
 				E7A309CC1E855D030079572C /* Twitthat */,
+				E7A1B9AD1E85B5DF00D7D4D1 /* TwitthatTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E7A1B9AC1E85B5DF00D7D4D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7A309CB1E855D030079572C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -167,6 +223,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E7A1B9AA1E85B5DF00D7D4D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7A1B9B11E85B5DF00D7D4D1 /* TwitthatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E7A309C91E855D030079572C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -180,6 +244,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E7A1B9B41E85B5DF00D7D4D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7A309CC1E855D030079572C /* Twitthat */;
+			targetProxy = E7A1B9B31E85B5DF00D7D4D1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		E7A309D81E855D040079572C /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
@@ -192,6 +264,36 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		E7A1B9B61E85B5DF00D7D4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TwitthatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = co.superbil.TwitthatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twitthat.app/Contents/MacOS/Twitthat";
+			};
+			name = Debug;
+		};
+		E7A1B9B71E85B5DF00D7D4D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = TwitthatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = co.superbil.TwitthatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Twitthat.app/Contents/MacOS/Twitthat";
+			};
+			name = Release;
+		};
 		E7A309DC1E855D040079572C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -308,6 +410,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E7A1B9B51E85B5DF00D7D4D1 /* Build configuration list for PBXNativeTarget "TwitthatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7A1B9B61E85B5DF00D7D4D1 /* Debug */,
+				E7A1B9B71E85B5DF00D7D4D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		E7A309C81E855D030079572C /* Build configuration list for PBXProject "Twitthat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
