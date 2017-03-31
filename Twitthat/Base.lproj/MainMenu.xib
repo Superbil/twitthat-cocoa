@@ -22,10 +22,13 @@
         <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
         <menu id="rYB-Zi-Eoo">
             <items>
+                <menuItem isSeparatorItem="YES" id="rq2-d3-vg4"/>
                 <menuItem title="{{SM_Preferences}}" id="ZGJ-iS-10M">
                     <modifierMask key="keyEquivalentModifierMask"/>
                 </menuItem>
-                <menuItem isSeparatorItem="YES" id="rq2-d3-vg4"/>
+                <menuItem title="{{SM_About}}" id="Ymi-bo-B8B">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                </menuItem>
                 <menuItem isSeparatorItem="YES" id="TCo-cg-TWn"/>
                 <menuItem title="{{SM_Quit}}" id="hQH-yi-pmA">
                     <modifierMask key="keyEquivalentModifierMask"/>
