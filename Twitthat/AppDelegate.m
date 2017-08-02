@@ -41,23 +41,30 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
                            NSLocalizedString(@"{{SM_Get_Firefox}}", nil),
                            NSLocalizedString(@"{{SM_Get_Safari}}", nil)];
 
-    self.actionTitles = @[@"Reading:",
-                          @"Looking at:",
-                          @"Watching:",
-                          @"Listening to:",
-                          @"Laughing at:",
-                          @"Curious about:",
-                          @"Crying for:",
-                          @"Orz at:",
-                          @"Disappointed at:",
-                          @"Responding to:",
-                          @"Waiting for:",
-                          @"Looking forward to:",
-                          @"→_→",
-                          @"@",
-                          ];
+    NSArray *titles = [[NSUserDefaults standardUserDefaults] objectForKey:@"Action titles"];
+    if (titles == nil) {
+        titles = @[@"Reading:",
+                   @"Looking at:",
+                   @"Watching:",
+                   @"Listening to:",
+                   @"Laughing at:",
+                   @"Curious about:",
+                   @"Crying for:",
+                   @"Orz at:",
+                   @"Disappointed at:",
+                   @"Responding to:",
+                   @"Waiting for:",
+                   @"Looking forward to:",
+                   @"→_→",
+                   @"@",
+                   ];
+    }
+    self.actionTitles = titles;
+
+    self.actionTitles = [self.actionTitles arrayByAddingObjectsFromArray:@[@"[好奇]", @"[大笑]", @"[觀看]", @"[讀]"]];
 
     [self initMenu];
+
 }
 
 - (void)initMenu {
@@ -74,6 +81,7 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
     }];
     NSMenuItem *p = [self.statusMenu itemAtIndex:1];
     p.submenu = browserMenu;
+
 
     NSUInteger insertIndex = 0;
     [self.actionTitles enumerateObjectsUsingBlock:^(NSString * _Nonnull t, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -111,7 +119,6 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
         case BrowserSourceFirefox:
             l = [[Browser get] firefox];
             break;
-
         case BrowserSourceSafari:
             l =  [[Browser get] safari];
             break;
