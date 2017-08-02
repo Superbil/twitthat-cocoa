@@ -428,6 +428,7 @@
 				E7A1B9B71E85B5DF00D7D4D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7A309C81E855D030079572C /* Build configuration list for PBXProject "Twitthat" */ = {
 			isa = XCConfigurationList;
