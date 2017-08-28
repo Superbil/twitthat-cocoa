@@ -128,7 +128,12 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
     }
 
     if (l) {
-        NSLog(@"%@ %@ %@", menuItem.title, l.title, l.url);
+        NSString *outputString = [NSString stringWithFormat:@"%@ %@ %@", menuItem.title, l.title, l.url];
+        NSLog(@"%@", outputString);
+        NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
+        NSInteger countOfClear = [pasteboard clearContents];
+        [pasteboard writeObjects:@[outputString]];
+        NSLog(@"write to pasteboard, clearContents %ld", countOfClear);
     }
 }
 
