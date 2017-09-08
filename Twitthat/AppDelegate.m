@@ -69,6 +69,8 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
 
 - (void)initMenu {
     NSInteger s = [[NSUserDefaults standardUserDefaults] integerForKey:@"Current Browser"];
+    self.currentSource = s;
+
     NSMenu *browserMenu = [[NSMenu alloc] initWithTitle:@"Browser"];
     [self.browserTitles enumerateObjectsUsingBlock:^(NSString * _Nonnull t, NSUInteger idx, BOOL * _Nonnull stop) {
         NSMenuItem *item = [[NSMenuItem alloc] initWithTitle:t
@@ -77,11 +79,11 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
         [browserMenu addItem:item];
         if (s > 0 && idx == (s - 1)) {
             // show checkmark
+            [item setState:NSOnState];
         }
     }];
     NSMenuItem *p = [self.statusMenu itemAtIndex:1];
     p.submenu = browserMenu;
-
 
     NSUInteger insertIndex = 0;
     [self.actionTitles enumerateObjectsUsingBlock:^(NSString * _Nonnull t, NSUInteger idx, BOOL * _Nonnull stop) {
