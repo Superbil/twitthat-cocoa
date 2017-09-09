@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E79BD2871F62B39100E8ADAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E79BD2891F62B39100E8ADAE /* Localizable.strings */; };
 		E7A1B99D1E85614000D7D4D1 /* Browser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1B99C1E85614000D7D4D1 /* Browser.m */; };
 		E7A1B9A01E859BD800D7D4D1 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A1B99F1E859BD800D7D4D1 /* AppleScriptObjC.framework */; };
 		E7A1B9A31E859F5400D7D4D1 /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1B9A21E859F5400D7D4D1 /* Link.m */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E79BD2881F62B39100E8ADAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E7A1B99B1E85614000D7D4D1 /* Browser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Browser.h; path = Twitthat/Browser.h; sourceTree = "<group>"; };
 		E7A1B99C1E85614000D7D4D1 /* Browser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Browser.m; path = Twitthat/Browser.m; sourceTree = "<group>"; };
 		E7A1B99F1E859BD800D7D4D1 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
@@ -125,6 +127,7 @@
 				E7A309D81E855D040079572C /* MainMenu.xib */,
 				E7A309DB1E855D040079572C /* Info.plist */,
 				E7A309D31E855D030079572C /* Supporting Files */,
+				E79BD2891F62B39100E8ADAE /* Localizable.strings */,
 			);
 			path = Twitthat;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7A309D71E855D030079572C /* Assets.xcassets in Resources */,
+				E79BD2871F62B39100E8ADAE /* Localizable.strings in Resources */,
 				E7A309DA1E855D040079572C /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,6 +268,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		E79BD2891F62B39100E8ADAE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E79BD2881F62B39100E8ADAE /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		E7A309D81E855D040079572C /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

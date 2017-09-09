@@ -1,0 +1,4 @@
+/* Get from browser */
+"{{SM_Get_Chrome}}" = "Get link from Chrome";
+"{{SM_Get_Firefox}}" = "Get link from Firefox";
+"{{SM_Get_Safari}}" = "Get link from Safari";
