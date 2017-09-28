@@ -17,6 +17,9 @@
 		E7A309DA1E855D040079572C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A309D81E855D040079572C /* MainMenu.xib */; };
 		E7B942F31F7D776200457582 /* Browser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B942F01F7D776200457582 /* Browser.m */; };
 		E7B942F41F7D776200457582 /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B942F21F7D776200457582 /* Link.m */; };
+		E7B942F81F7D77B900457582 /* TwitthatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7B942F61F7D77B900457582 /* TwitthatModel.xcdatamodeld */; };
+		E7B943001F7D79D000457582 /* Rule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B942FE1F7D79D000457582 /* Rule+CoreDataClass.swift */; };
+		E7B943011F7D79D000457582 /* Rule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B942FF1F7D79D000457582 /* Rule+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,10 @@
 		E7B942F01F7D776200457582 /* Browser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Browser.m; sourceTree = "<group>"; };
 		E7B942F11F7D776200457582 /* Browser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Browser.h; sourceTree = "<group>"; };
 		E7B942F21F7D776200457582 /* Link.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Link.m; sourceTree = "<group>"; };
+		E7B942F71F7D77B900457582 /* TwitthatModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TwitthatModel.xcdatamodel; sourceTree = "<group>"; };
+		E7B942F91F7D787C00457582 /* Twitthat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Twitthat-Bridging-Header.h"; sourceTree = "<group>"; };
+		E7B942FE1F7D79D000457582 /* Rule+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E7B942FF1F7D79D000457582 /* Rule+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +110,8 @@
 			children = (
 				E7A309CF1E855D030079572C /* Twitthat */,
 				E7A1B9AF1E85B5DF00D7D4D1 /* TwitthatTests */,
-				E7A309CE1E855D030079572C /* Products */,
 				E7A1B99E1E859BD800D7D4D1 /* Frameworks */,
+				E7A309CE1E855D030079572C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,6 +127,8 @@
 		E7A309CF1E855D030079572C /* Twitthat */ = {
 			isa = PBXGroup;
 			children = (
+				E7B942F91F7D787C00457582 /* Twitthat-Bridging-Header.h */,
+				E7B942F51F7D779C00457582 /* Database */,
 				E7A1B99A1E85604300D7D4D1 /* Classes */,
 				E7A309D01E855D030079572C /* AppDelegate.h */,
 				E7A309D11E855D030079572C /* AppDelegate.m */,
@@ -138,6 +147,16 @@
 				E7A309D41E855D030079572C /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7B942F51F7D779C00457582 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				E7B942FE1F7D79D000457582 /* Rule+CoreDataClass.swift */,
+				E7B942FF1F7D79D000457582 /* Rule+CoreDataProperties.swift */,
+				E7B942F61F7D77B900457582 /* TwitthatModel.xcdatamodeld */,
+			);
+			name = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +213,7 @@
 					};
 					E7A309CC1E855D030079572C = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -250,8 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B942F81F7D77B900457582 /* TwitthatModel.xcdatamodeld in Sources */,
+				E7B943001F7D79D000457582 /* Rule+CoreDataClass.swift in Sources */,
 				E7B942F41F7D776200457582 /* Link.m in Sources */,
 				E7A309D51E855D030079572C /* main.m in Sources */,
+				E7B943011F7D79D000457582 /* Rule+CoreDataProperties.swift in Sources */,
 				E7A309D21E855D030079572C /* AppDelegate.m in Sources */,
 				E7B942F31F7D776200457582 /* Browser.m in Sources */,
 			);
@@ -290,6 +313,7 @@
 		E7A1B9B61E85B5DF00D7D4D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -305,6 +329,7 @@
 		E7A1B9B71E85B5DF00D7D4D1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -408,12 +433,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Twitthat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.superbil.twitthat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Twitthat/Twitthat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -421,12 +450,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Twitthat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.superbil.twitthat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Twitthat/Twitthat-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -461,6 +493,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E7B942F61F7D77B900457582 /* TwitthatModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E7B942F71F7D77B900457582 /* TwitthatModel.xcdatamodel */,
+			);
+			currentVersion = E7B942F71F7D77B900457582 /* TwitthatModel.xcdatamodel */;
+			path = TwitthatModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E7A309C51E855D030079572C /* Project object */;
 }
