@@ -14,12 +14,12 @@
 		E7A309D21E855D030079572C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A309D11E855D030079572C /* AppDelegate.m */; };
 		E7A309D51E855D030079572C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A309D41E855D030079572C /* main.m */; };
 		E7A309D71E855D030079572C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A309D61E855D030079572C /* Assets.xcassets */; };
-		E7A309DA1E855D040079572C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A309D81E855D040079572C /* MainMenu.xib */; };
 		E7B942F31F7D776200457582 /* Browser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B942F01F7D776200457582 /* Browser.m */; };
 		E7B942F41F7D776200457582 /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B942F21F7D776200457582 /* Link.m */; };
 		E7B942F81F7D77B900457582 /* TwitthatModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E7B942F61F7D77B900457582 /* TwitthatModel.xcdatamodeld */; };
 		E7B943001F7D79D000457582 /* Rule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B942FE1F7D79D000457582 /* Rule+CoreDataClass.swift */; };
 		E7B943011F7D79D000457582 /* Rule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B942FF1F7D79D000457582 /* Rule+CoreDataProperties.swift */; };
+		E7B943041F7D7AD200457582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B943021F7D7AD200457582 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		E7A309D11E855D030079572C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		E7A309D41E855D030079572C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E7A309D61E855D030079572C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E7A309D91E855D040079572C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E7A309DB1E855D040079572C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7B942EF1F7D776200457582 /* Link.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
 		E7B942F01F7D776200457582 /* Browser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Browser.m; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		E7B942F91F7D787C00457582 /* Twitthat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Twitthat-Bridging-Header.h"; sourceTree = "<group>"; };
 		E7B942FE1F7D79D000457582 /* Rule+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E7B942FF1F7D79D000457582 /* Rule+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		E7B943031F7D7AD200457582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +133,7 @@
 				E7A309D01E855D030079572C /* AppDelegate.h */,
 				E7A309D11E855D030079572C /* AppDelegate.m */,
 				E7A309D61E855D030079572C /* Assets.xcassets */,
-				E7A309D81E855D040079572C /* MainMenu.xib */,
+				E7B943021F7D7AD200457582 /* Main.storyboard */,
 				E7A309DB1E855D040079572C /* Info.plist */,
 				E7A309D31E855D030079572C /* Supporting Files */,
 				E79BD2891F62B39100E8ADAE /* Localizable.strings */,
@@ -251,7 +251,7 @@
 			files = (
 				E7A309D71E855D030079572C /* Assets.xcassets in Resources */,
 				E79BD2871F62B39100E8ADAE /* Localizable.strings in Resources */,
-				E7A309DA1E855D040079572C /* MainMenu.xib in Resources */,
+				E7B943041F7D7AD200457582 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,12 +299,12 @@
 			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
-		E7A309D81E855D040079572C /* MainMenu.xib */ = {
+		E7B943021F7D7AD200457582 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E7A309D91E855D040079572C /* Base */,
+				E7B943031F7D7AD200457582 /* Base */,
 			);
-			name = MainMenu.xib;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

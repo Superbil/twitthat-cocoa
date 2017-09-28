@@ -36,6 +36,9 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
     self.statusBar = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     self.statusBar.title = @"TT";
     self.statusBar.menu = self.statusMenu;
+    NSMenuItem *quitItem = self.statusMenu.itemArray.lastObject;
+    quitItem.target = NSApp;
+    quitItem.action = @selector(terminate:);
 
     self.browserTitles = @[NSLocalizedString(@"{{SM_Get_Chrome}}", nil),
                            NSLocalizedString(@"{{SM_Get_Firefox}}", nil),
