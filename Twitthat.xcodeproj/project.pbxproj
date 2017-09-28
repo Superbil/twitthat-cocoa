@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		E79BD2871F62B39100E8ADAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E79BD2891F62B39100E8ADAE /* Localizable.strings */; };
-		E7A1B99D1E85614000D7D4D1 /* Browser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1B99C1E85614000D7D4D1 /* Browser.m */; };
 		E7A1B9A01E859BD800D7D4D1 /* AppleScriptObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A1B99F1E859BD800D7D4D1 /* AppleScriptObjC.framework */; };
-		E7A1B9A31E859F5400D7D4D1 /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1B9A21E859F5400D7D4D1 /* Link.m */; };
 		E7A1B9A91E85A9F100D7D4D1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7A1B9A81E85A9F100D7D4D1 /* Social.framework */; };
 		E7A1B9B11E85B5DF00D7D4D1 /* TwitthatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A1B9B01E85B5DF00D7D4D1 /* TwitthatTests.m */; };
 		E7A309D21E855D030079572C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A309D11E855D030079572C /* AppDelegate.m */; };
 		E7A309D51E855D030079572C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A309D41E855D030079572C /* main.m */; };
 		E7A309D71E855D030079572C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7A309D61E855D030079572C /* Assets.xcassets */; };
 		E7A309DA1E855D040079572C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A309D81E855D040079572C /* MainMenu.xib */; };
+		E7B942F31F7D776200457582 /* Browser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B942F01F7D776200457582 /* Browser.m */; };
+		E7B942F41F7D776200457582 /* Link.m in Sources */ = {isa = PBXBuildFile; fileRef = E7B942F21F7D776200457582 /* Link.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,11 +31,7 @@
 
 /* Begin PBXFileReference section */
 		E79BD2881F62B39100E8ADAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E7A1B99B1E85614000D7D4D1 /* Browser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Browser.h; path = Twitthat/Browser.h; sourceTree = "<group>"; };
-		E7A1B99C1E85614000D7D4D1 /* Browser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Browser.m; path = Twitthat/Browser.m; sourceTree = "<group>"; };
 		E7A1B99F1E859BD800D7D4D1 /* AppleScriptObjC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppleScriptObjC.framework; path = System/Library/Frameworks/AppleScriptObjC.framework; sourceTree = SDKROOT; };
-		E7A1B9A11E859F5400D7D4D1 /* Link.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Link.h; path = Twitthat/Link.h; sourceTree = "<group>"; };
-		E7A1B9A21E859F5400D7D4D1 /* Link.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Link.m; path = Twitthat/Link.m; sourceTree = "<group>"; };
 		E7A1B9A81E85A9F100D7D4D1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		E7A1B9AE1E85B5DF00D7D4D1 /* TwitthatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitthatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7A1B9B01E85B5DF00D7D4D1 /* TwitthatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitthatTests.m; sourceTree = "<group>"; };
@@ -47,6 +43,10 @@
 		E7A309D61E855D030079572C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7A309D91E855D040079572C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E7A309DB1E855D040079572C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7B942EF1F7D776200457582 /* Link.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Link.h; sourceTree = "<group>"; };
+		E7B942F01F7D776200457582 /* Browser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Browser.m; sourceTree = "<group>"; };
+		E7B942F11F7D776200457582 /* Browser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Browser.h; sourceTree = "<group>"; };
+		E7B942F21F7D776200457582 /* Link.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Link.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,10 +72,10 @@
 		E7A1B99A1E85604300D7D4D1 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E7A1B99B1E85614000D7D4D1 /* Browser.h */,
-				E7A1B99C1E85614000D7D4D1 /* Browser.m */,
-				E7A1B9A11E859F5400D7D4D1 /* Link.h */,
-				E7A1B9A21E859F5400D7D4D1 /* Link.m */,
+				E7B942F11F7D776200457582 /* Browser.h */,
+				E7B942F01F7D776200457582 /* Browser.m */,
+				E7B942EF1F7D776200457582 /* Link.h */,
+				E7B942F21F7D776200457582 /* Link.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -101,7 +101,6 @@
 		E7A309C41E855D030079572C = {
 			isa = PBXGroup;
 			children = (
-				E7A1B99A1E85604300D7D4D1 /* Classes */,
 				E7A309CF1E855D030079572C /* Twitthat */,
 				E7A1B9AF1E85B5DF00D7D4D1 /* TwitthatTests */,
 				E7A309CE1E855D030079572C /* Products */,
@@ -121,6 +120,7 @@
 		E7A309CF1E855D030079572C /* Twitthat */ = {
 			isa = PBXGroup;
 			children = (
+				E7A1B99A1E85604300D7D4D1 /* Classes */,
 				E7A309D01E855D030079572C /* AppDelegate.h */,
 				E7A309D11E855D030079572C /* AppDelegate.m */,
 				E7A309D61E855D030079572C /* Assets.xcassets */,
@@ -250,10 +250,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7A1B99D1E85614000D7D4D1 /* Browser.m in Sources */,
+				E7B942F41F7D776200457582 /* Link.m in Sources */,
 				E7A309D51E855D030079572C /* main.m in Sources */,
 				E7A309D21E855D030079572C /* AppDelegate.m in Sources */,
-				E7A1B9A31E859F5400D7D4D1 /* Link.m in Sources */,
+				E7B942F31F7D776200457582 /* Browser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
