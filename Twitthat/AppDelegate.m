@@ -46,20 +46,20 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
 
     NSArray *titles = [[NSUserDefaults standardUserDefaults] objectForKey:@"Action titles"];
     if (titles == nil) {
-        titles = @[@"Reading:",
-                   @"Looking at:",
-                   @"Watching:",
-                   @"Listening to:",
-                   @"Laughing at:",
-                   @"Curious about:",
-                   @"Crying for:",
-                   @"Orz at:",
-                   @"Disappointed at:",
-                   @"Responding to:",
-                   @"Waiting for:",
-                   @"Looking forward to:",
-                   @"→_→",
-                   @"@",
+        titles = @[NSLocalizedString(@"Reading:", nil),
+                   NSLocalizedString(@"Looking at:", nil),
+                   NSLocalizedString(@"Watching:", nil),
+                   NSLocalizedString(@"Listening to:", nil),
+                   NSLocalizedString(@"Laughing at:", nil),
+                   NSLocalizedString(@"Curious about:", nil),
+                   NSLocalizedString(@"Crying for:", nil),
+                   NSLocalizedString(@"Orz at:", nil),
+                   NSLocalizedString(@"Disappointed at:", nil),
+                   NSLocalizedString(@"Responding to:", nil),
+                   NSLocalizedString(@"Waiting for:", nil),
+                   NSLocalizedString(@"Looking forward to:", nil),
+                   NSLocalizedString(@"→_→", nil),
+                   NSLocalizedString(@"@", nil),
                    ];
     }
     self.actionTitles = titles;
