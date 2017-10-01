@@ -133,7 +133,22 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
     }
 
     if (l) {
-        NSString *outputString = [NSString stringWithFormat:@"%@ %@ %@", menuItem.title, l.title, l.url];
+        NSURLComponents *components = [NSURLComponents componentsWithString:l.url.absoluteString];
+        NSMutableArray<NSURLQueryItem *> *queryItems = [components.queryItems mutableCopy];
+        NSMutableArray<NSURLQueryItem *> *removeItems = [NSMutableArray array];
+        [queryItems enumerateObjectsUsingBlock:^(NSURLQueryItem * _Nonnull item, NSUInteger idx, BOOL * _Nonnull stop) {
+            if ([item.name hasPrefix:@"utm_"]) {
+                [removeItems addObject:item];
+            }
+        }];
+        [removeItems enumerateObjectsUsingBlock:^(NSURLQueryItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            [queryItems removeObject:obj];
+        }];
+
+        NSLog(@"get url components %@ => %@", components.queryItems, queryItems);
+        components.queryItems = queryItems;
+
+        NSString *outputString = [NSString stringWithFormat:@"%@ %@ %@", menuItem.title, l.title, components.URL];
         NSLog(@"%@", outputString);
         NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
         NSInteger countOfClear = [pasteboard clearContents];
