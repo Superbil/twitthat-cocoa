@@ -20,6 +20,7 @@
 		E7B943001F7D79D000457582 /* Rule+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B942FE1F7D79D000457582 /* Rule+CoreDataClass.swift */; };
 		E7B943011F7D79D000457582 /* Rule+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B942FF1F7D79D000457582 /* Rule+CoreDataProperties.swift */; };
 		E7B943041F7D7AD200457582 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7B943021F7D7AD200457582 /* Main.storyboard */; };
+		E7DC1FDA2211E8D2004F3137 /* NSAppleEventDescriptor+AuthorizationStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DC1FD92211E8D2004F3137 /* NSAppleEventDescriptor+AuthorizationStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		E7B942FE1F7D79D000457582 /* Rule+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+CoreDataClass.swift"; sourceTree = "<group>"; };
 		E7B942FF1F7D79D000457582 /* Rule+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Rule+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		E7B943031F7D7AD200457582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E7DC1FD82211E8D2004F3137 /* NSAppleEventDescriptor+AuthorizationStatus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSAppleEventDescriptor+AuthorizationStatus.h"; sourceTree = "<group>"; };
+		E7DC1FD92211E8D2004F3137 /* NSAppleEventDescriptor+AuthorizationStatus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSAppleEventDescriptor+AuthorizationStatus.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				E7B942F01F7D776200457582 /* Browser.m */,
 				E7B942EF1F7D776200457582 /* Link.h */,
 				E7B942F21F7D776200457582 /* Link.m */,
+				E7DC1FD82211E8D2004F3137 /* NSAppleEventDescriptor+AuthorizationStatus.h */,
+				E7DC1FD92211E8D2004F3137 /* NSAppleEventDescriptor+AuthorizationStatus.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -273,6 +278,7 @@
 				E7B942F81F7D77B900457582 /* TwitthatModel.xcdatamodeld in Sources */,
 				E7B943001F7D79D000457582 /* Rule+CoreDataClass.swift in Sources */,
 				E7B942F41F7D776200457582 /* Link.m in Sources */,
+				E7DC1FDA2211E8D2004F3137 /* NSAppleEventDescriptor+AuthorizationStatus.m in Sources */,
 				E7A309D51E855D030079572C /* main.m in Sources */,
 				E7B943011F7D79D000457582 /* Rule+CoreDataProperties.swift in Sources */,
 				E7A309D21E855D030079572C /* AppDelegate.m in Sources */,
