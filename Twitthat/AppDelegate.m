@@ -116,28 +116,31 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
 - (IBAction)itemAction:(id)sender {
     NSMenuItem *menuItem = sender;
 
-    Link *l = nil;
+    Link *link = nil;
     switch (self.currentSource) {
         case BrowserSourceChrome:
-            l = [[Browser get] chrome];
+            link = [[Browser get] chrome];
             break;
         case BrowserSourceFirefox:
-            l = [[Browser get] firefox];
+            link = [[Browser get] firefox];
             break;
         case BrowserSourceSafari:
-            l =  [[Browser get] safari];
+            link =  [[Browser get] safari];
             break;
 
         default:
             break;
     }
 
-    if (l) {
-        NSURLComponents *components = [NSURLComponents componentsWithString:l.url.absoluteString];
+    if (link) {
+        NSURLComponents *components = [NSURLComponents componentsWithString:link.url.absoluteString];
         NSMutableArray<NSURLQueryItem *> *queryItems = [components.queryItems mutableCopy];
         NSMutableArray<NSURLQueryItem *> *removeItems = [NSMutableArray array];
         [queryItems enumerateObjectsUsingBlock:^(NSURLQueryItem * _Nonnull item, NSUInteger idx, BOOL * _Nonnull stop) {
             if ([item.name hasPrefix:@"utm_"]) {
+                [removeItems addObject:item];
+            }
+            if ([item.name hasPrefix:@"fbclid"]) {
                 [removeItems addObject:item];
             }
         }];
