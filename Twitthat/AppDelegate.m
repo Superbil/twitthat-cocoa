@@ -151,7 +151,16 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
         NSLog(@"get url components %@ => %@", components.queryItems, queryItems);
         components.queryItems = queryItems;
 
-        NSString *outputString = [NSString stringWithFormat:@"%@ %@ %@", menuItem.title, l.title, components.URL];
+        // Clean link.title
+        NSString *linkTitle = [link.title stringByReplacingOccurrencesOfString:@"🔊" withString:@""];
+
+        // Clean last ?
+        NSString *urlString = components.URL.description;
+        if ([urlString hasSuffix:@"?"]) {
+            urlString = [urlString substringWithRange:NSMakeRange(0, urlString.length - 1)];
+        }
+
+        NSString *outputString = [NSString stringWithFormat:@"%@ %@ %@", menuItem.title, linkTitle, urlString];
         NSLog(@"%@", outputString);
         NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
         NSInteger countOfClear = [pasteboard clearContents];
