@@ -104,7 +104,7 @@ end tell\n";
         }
     } else {
         // no script result, handle error here
-        NSLog(@"script error: %@", errorDict[NSAppleScriptErrorMessage]);
+        NSLog(@"script error(%@): %@", errorDict[NSAppleScriptErrorNumber], errorDict[NSAppleScriptErrorMessage]);
     }
 
     return nil;
