@@ -64,7 +64,7 @@ typedef NS_ENUM(NSUInteger, BrowserSource) {
     }
     self.actionTitles = titles;
 
-    self.actionTitles = [self.actionTitles arrayByAddingObjectsFromArray:@[@"[好奇]", @"[大笑]", @"[觀看]", @"[讀]"]];
+    self.actionTitles = [self.actionTitles arrayByAddingObjectsFromArray:@[@"[好奇]", @"[大笑]", @"[觀看]", @"[讀]", @"[聆聽]"]];
 
     [self initMenu];
 
